@@ -1,0 +1,26 @@
+
+
+  ul{
+	padding: 0;
+	list-style: none;
+  }
+  li{
+	margin: 0;
+	float: left;
+	padding: 50px 0;
+  }
+  .card{
+	width: 318px;
+	margin-left: 0.25em;
+	margin-right: 0.25em;
+  }
+	img{
+	  display: block;
+	  max-width: 100%;
+	  height: auto;
+	}
+  }
+  .owl-wrapper{
+	transform-style: preserve-3d;
+  }
+ 

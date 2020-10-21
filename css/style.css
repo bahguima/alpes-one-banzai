@@ -27,10 +27,12 @@
 #menu div {
   display: flex;
   margin: 0 10px;
+  
 }
 
 #menu div span{
    margin: 0 2px;
+   
 }
 
 
@@ -53,6 +55,116 @@
   color: #DF0209;
   font-size: 26pt;
 }
+
+.formulario {
+    background: #eeeeee ;
+    left: 75vw;
+    position: -webkit-sticky;
+    position: fixed;
+    top: 30%;
+    right: 5vw;
+    width: 20rem;
+    z-index: 100;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: .5rem;
+}
+
+.formulario .titulo {
+    align-items: center;
+    display: flex;
+    margin-left: 2.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.formulario .titulo img {
+    margin-right: .7rem;
+}
+
+.titulo__texto h3 {
+    color: #727B7A;
+    font-size: 1rem;
+}
+    
+.titulo__texto h4 {
+    color: #DF0209;
+    font-size: 1.8rem;
+   
+}
+
+.formulario label {
+    font-size: 0.0001px;
+}
+
+.formulario .inputs {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
+
+.botao input{
+    width: auto;
+
+    background-color: #1CB72A;
+    border-style: none;
+}
+
+.formulario .inputs .type__input {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario .inputs .type__input input{
+    background-color: #eeeeee;
+    background-size: 1.2rem;
+    background-position: .5rem;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-radius: .3rem;
+    border-color: #d5d5d5;
+    height: 32px;
+    width: 15rem;
+    text-indent: 30px;
+}
+
+.formulario .inputs .type__input #nome {
+    background-image: url("../img//Grupo\ 32.png");
+}
+
+.formulario .inputs .type__input #e-mail{
+    background-image: url("../img/black-envelope.png");
+}
+
+.formulario .inputs .type__input #telefone {
+    background-image: url("../img/call-answer.png");
+}
+
+.formulario .inputs .type__input #escolha-o-horario {
+    background-image: url("../img/clock-circular-outline.png");
+}
+
+.formulario .inputs .type__input #escolha-a-unidade {
+    background-image: url("../img/maps.png");
+}
+
+.formulario .inputs input + label, 
+.formulario .inputs input + input
+{
+    margin-top: .3rem;
+}
+
+.botao{
+    background-color: #1CB72A;
+    border-style: none;
+    border-radius: .3rem;
+    color: #fff;
+    margin-top: .5rem;
+    padding: 1rem 3rem;
+}
+
 
 
 #section2 {
@@ -123,6 +235,55 @@
 #section3 div p {
   font-size: 18pt;
   line-height: 30px;
+}
+
+.carousel {
+  left:100px;
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+}
+button.slick-next {
+  position: absolute;
+  top: 28%;
+  right: 3%;
+  z-index: 9;
+  width: 40px;
+  height: 40px;
+  font-size: 0pt;
+  border-radius: 20px;
+  background: url('../img/keyboard-right-arrow.png') center center/13px no-repeat;
+}
+button.slick-prev {
+  position: absolute;
+  top: 28%;
+  left: 3%;
+  z-index: 9;
+  width: 40px;
+  height: 40px;
+  font-size: 0pt;
+  border-radius: 20px;
+  background: url('../img/chevron-right.png') center center/13px no-repeat;
+}
+.carousel img {
+  width: 100%;
+  border: 1px solid #C5C5C5;
+  padding: 2%;
+  position: relative;
+  margin-right: 5px;
+}
+.slick-slide img {
+  display: block;
+}
+.carousel h3{
+  font-size: 20px;
+  text-align: left;
+  color: #000000;
+}
+.carousel p{
+  text-align: left;
+  font-size: 14px;
+  color: #000000;
 }
   
 
@@ -255,3 +416,81 @@ footer {
       margin-bottom: 30px;
   }
 }
+
+
+.img-fluid-desk{
+  display: block;
+}
+.img-fluid-mobile{
+  display: none;
+}
+
+.header-desktop{
+  display: block;
+}
+.header-mob{
+  display: none;
+}
+
+
+/* CSS RESPONSIVO
+  -------------------------------------------------- */
+  
+  @media (max-width: 1000px) {
+    /* imagem responsiva*/
+    .img-fluid-desk{
+      display: none;
+    }
+    .img-fluid-mobile{
+      display: block;
+    }
+
+    .header-desktop{
+      display: none;
+    }
+    .header-mob{
+      display: block;
+         display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        background: #EEEEEE;
+    }
+
+    .header-mob img{
+    
+        height: 25px;
+    }
+
+    .logo-honda .card-img-top {
+      margin-bottom: 30px;
+     
+  }
+
+  .logo-section img {
+      margin-bottom: 30px;
+  }
+
+  #logo {
+    flex-direction: column;
+      justify-items: center;
+      width: 100%;
+      height: auto;
+      padding: 20px 0;
+  }
+  
+  .logo-contato div h5 {
+    color: #727B7A;
+    margin: 5px 0;
+    font-size: 16pt;
+  }
+  
+  .logo-contato div h3 {
+    color: #DF0209;
+    font-size: 26pt;
+  }
+  }
+  
+
+
