@@ -13,6 +13,7 @@
 - NodeJS
 
 
+
 <h1>Versão da página <i>Honda-Banzai</i> para desktop<h1>
 <p align="center">
 <img src="img/desk_rm.gif">
@@ -23,5 +24,7 @@
 <p align="center">
 <img src="img/mobile_rm.gif">
 </p>
-</p>
+
+
+Link: https://alpes-one-banzai.netlify.app/
 
