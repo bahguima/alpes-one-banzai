@@ -68,6 +68,10 @@
   font-size: 26px;
 }
 
+.logo-contato-mobile{
+  display:none;
+}
+
 /* Formulario de contato
 -------------------------------------------------- */
 
@@ -330,8 +334,13 @@ button.slick-prev {
     padding: 20px 10%;
   }
   .section4 h1{
-    font-size: 34pt;
+    font-size: 34px;
     font-style: italic;
+  }
+
+  .section4 p{
+    font-size: 18px;
+
   }
 
 
@@ -431,7 +440,9 @@ button.slick-prev {
 }
 
 .text h2 {
-  margin-bottom: 20px;
+  font-size: 24px;
+  font-style: italic;
+  margin-bottom: 25px;
 }
 
 .text img {
@@ -442,10 +453,19 @@ button.slick-prev {
 -------------------------------------------------- */
 
 footer {
-  padding: 20px;
+  padding: 15px;
+  padding-left: 350px;
+  padding-right: 350px;
   width: 100%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+ 
+
+}
+
+.footer-mobile{
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -475,6 +495,14 @@ footer {
 }
 .header-mob{
   display: none;
+}
+
+.logo-contato{
+  display: none;
+}
+
+.logo-contato-mobile{
+  display: block;
 }
 
 .contact-form{
@@ -512,6 +540,15 @@ footer {
 #section3-mobile{
   display:none
 }
+
+
+.footer-mobile{
+  display: none;
+}
+
+
+
+
 /* CSS RESPONSIVO
   -------------------------------------------------- */
   
@@ -549,6 +586,7 @@ footer {
 
   .logo-section img {
       margin-bottom: 30px;
+    
   }
 
   #logo {
@@ -561,21 +599,26 @@ footer {
   }
   
   .logo-contato{
-    padding: 40px 0;
+    padding: 40px ;
   }
 
   .logo-contato div h5 {
     color: #727B7A;
     margin: 5px 0;
-    font-size: 16pt;
+    font-size: 16px;
+  }
+    .logo-contato-mobile{
+    
+      margin: 20px 30px 0 0;
+    }
   
     
    
-  }
+ 
   
   .logo-contato div h3 {
     color: #DF0209;
-    font-size: 26pt;
+    font-size: 26px;
   }
   
 
@@ -593,7 +636,7 @@ footer {
 .formulario-mobile {
   background: #eeeeee ;
 
-  width: 70%;
+  width: 90%;
 
   
  
@@ -634,8 +677,10 @@ footer {
 }
 
 .formulario-mobile .inputs {
-  align-items: center;
+  margin: auto;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 20rem;
 }
@@ -651,6 +696,7 @@ footer {
   align-items: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .formulario-mobile .inputs .type__input input{
@@ -665,6 +711,8 @@ footer {
   height: 32px;
   width: 15rem;
   text-indent: 30px;
+  
+ 
 }
 
 .formulario-mobile .inputs .type__input #nome {
@@ -712,8 +760,13 @@ footer {
   display:block;
 }
 #section2 .titulo h1 {
-  font-size: 24pt;
+  font-size: 24px;
   font-style: italic;
+  text-align:center;
+}
+#section2 p{
+  margin-top: 20px;
+  text-align:center;
 }
 .carousel-mobile p{
   text-align: left;
@@ -728,9 +781,12 @@ footer {
   display:block;
 }
 
+
 .cards-conheca-mais{
   display: none;
+ 
 }
+
 .cards-conheca-mais-mobile{
   display:block;
 }
@@ -765,18 +821,30 @@ footer {
 #section3-mobile div h1 {
   font-size: 24px;
   font-style: italic;
+  text-align: center;
 }
 
 #section3-mobile div p {
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
+}
+
+footer {
+  display:none;
+}
+
+.footer-mobile{
+
+  display:block;
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 
-
 }
-
-
-
 
   
