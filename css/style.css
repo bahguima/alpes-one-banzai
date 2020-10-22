@@ -1,3 +1,7 @@
+/* Folha de Estilo Alpes Ones
+-------------------------------------------------- */
+
+
 * {
     margin: 0;
     padding: 0;
@@ -12,16 +16,21 @@
   :root {
     font-size: 100%;
   }
+
+  /* Menu topo
+-------------------------------------------------- */
   
 
   #menu {
     background-color: #EEEEEE;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     color:#707070;
-    font-size: 1rem;
-    padding: 5px 0px;
+    font-size: 12px;
+    padding: 5px 130px 5px 145px;
+    
+    
 }
 
 #menu div {
@@ -31,16 +40,19 @@
 }
 
 #menu div span{
-   margin: 0 2px;
+   margin: 0 10px;
    
 }
 
+/* logo Honda Banzai e Central de Atendimento
+-------------------------------------------------- */
 
 #logo {
   width: 100%;
   display: flex;
-  justify-content: space-around;
-  margin: 2rem 0;
+  justify-content: space-between;
+  margin: 1rem 0;
+  padding: 0 150px 0 155px;
   font-style: italic;
   align-items: center;
 }
@@ -48,13 +60,16 @@
 #logo div h5 {
   color: #727B7A;
   margin: 5px 0;
-  font-size: 16pt;
+  font-size: 16px;
 }
 
 #logo div h3 {
   color: #DF0209;
-  font-size: 26pt;
+  font-size: 26px;
 }
+
+/* Formulario de contato
+-------------------------------------------------- */
 
 .formulario {
     background: #eeeeee ;
@@ -162,11 +177,12 @@
     border-radius: .3rem;
     color: #fff;
     margin-top: .5rem;
-    padding: 1rem 3rem;
+    padding: .5rem 2.7rem;
 }
 
 
-
+/* Section 'A emoção de dirigir leva você mais longe'
+-------------------------------------------------- */
 
 #section2 {
   display: flex;
@@ -175,8 +191,9 @@
 }
 
 #section2 .titulo h1 {
-  font-size: 34pt;
+  font-size: 34px;
   font-style: italic;
+  margin-bottom: 40px;
 }
 
 #section2 .imagens {
@@ -184,10 +201,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  
 }
 
 #section2 .imagens div img {
   width: 1000px;
+  padding:1%;
 }
 
 #section2 .imagens .coluna {
@@ -196,6 +215,9 @@
 
 #section2 .imagens .coluna img {
   width: 250px;
+  margin-top:5px;
+  border: 1px solid #D5D5D5;
+ 
 }
 
 #section2 .texto{
@@ -208,8 +230,10 @@
 }
 
 
+/* Section 'Prepare-se para algo realmente novo'
+-------------------------------------------------- */
 
-#section3 {
+#section3-desk {
   background-image: url('../img/img7desk.png');
   
   background-position: center;
@@ -222,62 +246,71 @@
   background-size: 100%;
 }
 
-#section3 div {
+#section3-desk div {
   color: #ffffff;
   padding: 0 10%;
   width: 100%;
 }
 
-#section3 div h1 {
+#section3-desk div h1 {
   font-size: 34pt;
   font-style: italic;
 }
 
-#section3 div p {
+#section3-desk div p {
   font-size: 18pt;
   line-height: 30px;
+}
+
+/* Carousel
+-------------------------------------------------- */
+
+#slide-carros{
+
+  margin-top: 15px;
+  margin-left:85px;
 }
 
 .carousel {
   left:100px;
   text-align: center;
   position: relative;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 button.slick-next {
   position: absolute;
-  top: 28%;
-  right: 3%;
+  top: 22%;
+  right: 2%;
   z-index: 9;
-  width: 40px;
-  height: 40px;
+  width: 10px;
+  height: 10px;
   font-size: 0pt;
   border-radius: 20px;
-  background: url('../img/keyboard-right-arrow.png') center center/13px no-repeat;
+  background: url('../img/keyboard-right-arrow.png') center center/15px no-repeat;
 }
 button.slick-prev {
   position: absolute;
-  top: 28%;
-  left: 3%;
+  top: 22%;
+  left: 1%;
   z-index: 9;
-  width: 40px;
-  height: 40px;
+  width: 10px;
+  height: 10px;
   font-size: 0pt;
   border-radius: 20px;
-  background: url('../img/chevron-right.png') center center/13px no-repeat;
+  background: url('../img/chevron-right.png') center center/15px no-repeat;
 }
 .carousel img {
   width: 100%;
   border: 1px solid #C5C5C5;
   padding: 2%;
   position: relative;
-  margin-right: 5px;
+  margin-right:5px;
+  
 }
-.slick-slide img {
-  display: block;
-}
+
 .carousel h3{
   font-size: 20px;
+  font-style:italic;
   text-align: left;
   color: #000000;
 }
@@ -285,8 +318,11 @@ button.slick-prev {
   text-align: left;
   font-size: 14px;
   color: #000000;
+  line-height: 18px;
 }
   
+  /* Cards 'Lançamentos da honda'
+-------------------------------------------------- */
 
   .section4{
     display: flex;
@@ -297,6 +333,7 @@ button.slick-prev {
     font-size: 34pt;
     font-style: italic;
   }
+
 
 
 .card{
@@ -332,6 +369,9 @@ button.slick-prev {
   color: #000000;
   opacity: 1;
 }
+
+/* Redes Sociais
+-------------------------------------------------- */
 .redesocial{
   width: 1366px;
   height: 228px;
@@ -363,7 +403,8 @@ button.slick-prev {
   margin: 3% 20%;
 }
 
-  
+  /* Pre footer
+-------------------------------------------------- */
 .pre-footer {
   width: 100%;
   display: flex;
@@ -396,6 +437,9 @@ button.slick-prev {
 .text img {
   margin-bottom: 20px;
 }
+
+/* Footer
+-------------------------------------------------- */
 
 footer {
   padding: 20px;
@@ -463,6 +507,11 @@ footer {
 .cards-conheca-mais-mobile{
   display:none;
 }
+
+
+#section3-mobile{
+  display:none
+}
 /* CSS RESPONSIVO
   -------------------------------------------------- */
   
@@ -507,8 +556,7 @@ footer {
       justify-items: center;
       width: 100%;
       height: auto;
-    
-     
+
       
   }
   
@@ -686,6 +734,44 @@ footer {
 .cards-conheca-mais-mobile{
   display:block;
 }
+
+#section3-desk{
+  display:none;
+}
+
+#section3-mobile{
+  display: block;
+}
+
+#section3-mobile {
+  background-image: url('../img/Grupo116.png');
+  
+  background-position: center;
+  display: flex;
+  height: 80vh;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: 100%;
+}
+
+#section3-mobile div {
+  color: #ffffff;
+  padding: 0 10%;
+  width: 100%;
+}
+
+#section3-mobile div h1 {
+  font-size: 24px;
+  font-style: italic;
+}
+
+#section3-mobile div p {
+  font-size: 16px;
+  line-height: 20px;
+}
+
 
 
 }

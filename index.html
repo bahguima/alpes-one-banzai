@@ -4,50 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- BIBLIOTECA PARA O CARROSEL JQUERY -->
+    
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css"/>
-    <!--  -->
-   
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
      <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
-
      <link rel="stylesheet" href="./css/style.css" />
      
-     
-   
-      
- 
-        
-
-        
-       
-   
-    
-   
     <title>Honda Banzai</title>
+
 </head>
+
 <body>
     <header class="header-desktop">        
 
         <div id="menu">
             <div>
-                <span class="fa fa-home"></span>
+               <img src="./img/home-button.svg" alt="Home">
                 <span>Ir para o Portal Banzai</span>
             </div>
             <div>
                 <div>
-                    <span class="fa fa-map-marker"></span>
+                    <img src="./img/facebook-placeholder-for-locate-places-on-maps.svg" alt="Localização">
                     <span>Encontre uma concessionária</span>
                 </div>
                 <div>
-                    <span class="fa fa-envelope"></span>
+                    <img src="./img/black-envelope.svg" alt="Contato">
                     <span>Fale conosco</span>
                 </div>
-            </div>
-            
-
+            </div>        
     </header>
+
 
     <header class="header-mob">
         <a href="#"><img src="./img/home-button.svg" alt="Home"></a>
@@ -71,11 +58,11 @@
             <img class="img-fluid-mobile" src="img/banner-mobile.png" width="100%" height="auto"><br><br>
           </div>
          
+          <!-- Formulario -->
           <div class="contact-form">
-              
           <form action="" class="formulario">
             <div class="titulo">
-                <img src="./img/Grupo 45.png" alt="">
+                <img src="./img/Grupo 45.png" style="width: 30px;">
                 <div class="titulo__texto">
                     <h3>Solicitar um</h3>
                     <h4>CONTATO</h4>
@@ -94,22 +81,20 @@
                     <input type="text" id="telefone" placeholder=" Telefone">
 
                     <label for="escolha-o-horario">Escolha o horário</label>
-                    <input type="date" id="escolha-o-horario" placeholder=" Escolha um horário">
+                    <input type="text" id="escolha-o-horario" placeholder=" Escolha um horário">
                     
 
                     <label for="escolha-a-unidade">Escolha a unidade</label>
-                    <input type="list" id="escolha-a-unidade" placeholder=" Escolha a unidade">
+                    <input type="text" id="escolha-a-unidade" placeholder=" Escolha a unidade">
                 </div>
-
-              
 
                 <input class="botao" type="submit" value="AGENDAR TEST DRIVE">
             </div>
-
         </form>
-
      </div>
-   
+     <!-- Fim do formulario -->
+
+     <!-- Formulario Mobile -->
     <div class="contact-form-mobile">
               
         <form action="" class="formulario-mobile">
@@ -133,20 +118,17 @@
                   <input type="text" id="telefone" placeholder=" Telefone">
 
                   <label for="escolha-o-horario">Escolha o horário</label>
-                  <input type="date" id="escolha-o-horario" placeholder=" Escolha um horário">
+                  <input type="text" id="escolha-o-horario" placeholder=" Escolha um horário">
                   
 
                   <label for="escolha-a-unidade">Escolha a unidade</label>
-                  <input type="list" id="escolha-a-unidade" placeholder=" Escolha a unidade">
+                  <input type="text" id="escolha-a-unidade" placeholder=" Escolha a unidade">
               </div>
-
-            
-
               <input class="botao" type="submit" value="AGENDAR TEST DRIVE">
           </div>
-
       </form>
       </div>
+      <!-- Fim do formulario mobile -->
 
 
           <div id="section2">
@@ -181,30 +163,39 @@
               </div>
         </div>
                   
-        <div id="section3">
+        <div id="section3-desk">
             <div>
                 <h1>PREPARE-SE PARA ALGO REALMENTE NOVO</h1>
                 <p>O Novo Civic Geração 10 vem completo de série. Conheça a versão perfeita para você.</p>
             </div>
         </div>
 
-       <!--  -->
+           <div id="section3-mobile">
+            <div class="section3-conteudo">
+                <h1>PREPARE-SE PARA ALGO REALMENTE NOVO</h1>
+                <p>O Novo Civic Geração 10 vem completo de série. Conheça a versão perfeita para você.</p>
+                <br>
+            </div>
+        </div>
+
+
+        <div id="slide-carros">
        <div class="slider-desk col-xs-12 col-sm-12 col-md-12">
-        <div class="row">
+        <div class="row"> 
             <div class="carousel" style="width:700px; height:400px;">
-                <div><img src="./img/direcao-eletrica.png" alt="direção elétrica">
+                <div><img src="./img/direcao-eletrica.png" alt="Direção elétrica">
                     <h3>Direção com assistência</h3>
                     <p>Sistema de estabilidade que reforça automaticamente o retorno da direção, auxiliando o motorista em situações onde o carro está ameaçado de instabilidade.</p>
                 </div>
-                <div><img src="./img/vidros-eletricos.png" alt="vidros elétricos">
+                <div><img src="./img/vidros-eletricos.png" alt="Vidros elétricos">
                     <h3>Vidros elétricos com subida automática</h3>
                     <p>Todas as portas possuem vidros elétricos com a função “um toque” e sistema de segurança antiesmagamento.</p>
                 </div>
-                <div><img src="./img/cambio-automatico.png" alt="cambio automático">
+                <div><img src="./img/cambio-automatico.png" alt="Câmbio automático">
                     <h3>Câmbio CVT com Paddle Shift</h3>
                     <p>O câmbio com transmissão CVT de 7 velocidade com Paddle Shift (aletas) proporciona conforto ao trocar de marchas.</p>
                 </div>
-                <div><img src="./img/direcao-eletrica.png" alt="direção elétrica">
+                <div><img src="./img/direcao-eletrica.png" alt="Direção elétrica">
                     <h3>Direção com assistência</h3>
                     <p>Sistema de estabilidade que reforça automaticamente o retorno da direção, auxiliando o motorista em situações onde o carro está ameaçado de instabilidade.</p>
                 </div>
@@ -233,11 +224,13 @@
         </div>
    </div>
 </div>
+</div>
 
        
         <div class="section4">
            
-                <h1>PRONTO PARA TER UM HONDA?</h1>
+         <h1>PRONTO PARA TER UM HONDA?</h1>
+         <span>Conheça os últimos grandes lançamentos da honda.<span>
             
         
         <div class="cards-conheca-mais col-xs-12 col-sm-12 col-md-12">
@@ -294,9 +287,6 @@
           <div style="margin: 10px;"><button type="button" class="btn btn-outline-secondary" >CONHEÇA MAIS</button></div>
         </div>
          
-          
-
-      
 
         <div class="pre-footer">
             <div class="text-img">
@@ -314,38 +304,17 @@
               <img src="/img/logo.svg" alt="Honda - Banzai">
               <img src="/img/Grupo 86.svg" alt="IBAMA">
           </footer>
-    
 
-          
-  
-     
-
-      
     </main>
 
-    
-
 <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
-
 <script src="./node_modules/jquery/dist/jquery.min.js"></script> 
 <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
-
-
-<!-- BIBLIOTECA PARA O CARROSEL JAVASCRIPT -->
 <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
-
-<!--  -->
 <script src="./js/carousel.js"></script>
-
-
-
-
-
-    
+  
 </body>
-
-
 
 </html>
