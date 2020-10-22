@@ -167,6 +167,7 @@
 
 
 
+
 #section2 {
   display: flex;
   flex-direction: column;
@@ -432,7 +433,36 @@ footer {
   display: none;
 }
 
+.contact-form{
+  display:block;
+}
 
+.contact-form-mobile{
+  display: none;
+}
+.civic{
+  display:block;
+}
+.civic-mobile{
+  display:none;
+}
+.slider-desk{
+  display:block;
+}
+.carousel-mobile p{
+
+  display:none;
+}
+.slider-mobile{
+  display:none;
+}
+
+.cards-conheca-mais{
+  display: block;
+}
+.cards-conheca-mais-mobile{
+  display:none;
+}
 /* CSS RESPONSIVO
   -------------------------------------------------- */
   
@@ -477,20 +507,190 @@ footer {
       justify-items: center;
       width: 100%;
       height: auto;
-      padding: 20px 0;
+    
+     
+      
   }
   
+  .logo-contato{
+    padding: 40px 0;
+  }
+
   .logo-contato div h5 {
     color: #727B7A;
     margin: 5px 0;
     font-size: 16pt;
+  
+    
+   
   }
   
   .logo-contato div h3 {
     color: #DF0209;
     font-size: 26pt;
   }
-  }
   
 
 
+.contact-form{
+  display:none;
+}
+
+.contact-form-mobile{
+  display: block;
+}
+
+
+
+.formulario-mobile {
+  background: #eeeeee ;
+
+  width: 70%;
+
+  
+ 
+
+  
+  margin: 0 auto;
+ 
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: .5rem;
+ 
+}
+
+.formulario-mobile .titulo {
+  align-items: center;
+  display: flex;
+  margin-left: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.formulario-mobile .titulo img {
+  margin-right: .7rem;
+}
+
+.titulo__texto h3 {
+  color: #727B7A;
+  font-size: 1rem;
+}
+  
+.titulo__texto h4 {
+  color: #DF0209;
+  font-size: 1.8rem;
+ 
+}
+
+.formulario-mobile label {
+  font-size: 0.0001px;
+}
+
+.formulario-mobile .inputs {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+}
+
+.botao input{
+  width: auto;
+
+  background-color: #1CB72A;
+  border-style: none;
+}
+
+.formulario-mobile .inputs .type__input {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-mobile .inputs .type__input input{
+
+  background-color: #eeeeee;
+  background-size: 1.2rem;
+  background-position: .5rem;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-radius: .3rem;
+  border-color: #d5d5d5;
+  height: 32px;
+  width: 15rem;
+  text-indent: 30px;
+}
+
+.formulario-mobile .inputs .type__input #nome {
+  background-image: url("../img//Grupo\ 32.png");
+}
+
+.formulario-mobile .inputs .type__input #e-mail{
+  background-image: url("../img/black-envelope.png");
+}
+
+.formulario-mobile .inputs .type__input #telefone {
+  background-image: url("../img/call-answer.png");
+}
+
+.formulario-mobile .inputs .type__input #escolha-o-horario {
+  background-image: url("../img/clock-circular-outline.png");
+}
+
+.formulario-mobile .inputs .type__input #escolha-a-unidade {
+  background-image: url("../img/maps.png");
+}
+
+.formulario-mobile .inputs input + label, 
+.formulario-mobile .inputs input + input
+{
+  margin-top: .3rem;
+}
+
+.botao{
+  background-color: #1CB72A;
+  border-style: none;
+  border-radius: .3rem;
+  color: #fff;
+  margin-top: .5rem;
+  padding: 1rem 3rem;
+}
+
+.coluna{
+  display:none;
+}
+.civic{
+  display:none;
+}
+.civic-mobile{
+  display:block;
+}
+#section2 .titulo h1 {
+  font-size: 24pt;
+  font-style: italic;
+}
+.carousel-mobile p{
+  text-align: left;
+  font-size: 14px;
+  color: #000000;
+  display:block;
+}
+.slider-desk{
+  display:none;
+}
+.slider-mobile{
+  display:block;
+}
+
+.cards-conheca-mais{
+  display: none;
+}
+.cards-conheca-mais-mobile{
+  display:block;
+}
+
+
+}
+
+
+
+
+  
